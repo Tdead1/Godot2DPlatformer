@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://wgeg6n0un6jb"]
+
+[ext_resource type="PackedScene" uid="uid://pidvem6wpxpr" path="res://testplayer.tscn" id="1_gamr2"]
+[ext_resource type="PackedScene" uid="uid://choarkogo87j2" path="res://block.tscn" id="2_msp1o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Testplayer" parent="." instance=ExtResource( "1_gamr2" )]
+position = Vector2(-29, -37)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-29, -37)
+current = true
+
+[node name="Block" parent="." instance=ExtResource( "2_msp1o" )]
+position = Vector2(-119, 34)
+
+[node name="Block2" parent="." instance=ExtResource( "2_msp1o" )]
+position = Vector2(-54, 34)
+
+[node name="Block3" parent="." instance=ExtResource( "2_msp1o" )]
+position = Vector2(11, 35)
+
+[node name="Block4" parent="." instance=ExtResource( "2_msp1o" )]
+position = Vector2(76, 35)
+
+[node name="Block" parent="Block4" instance=ExtResource( "2_msp1o" )]
+position = Vector2(-571, 188)
+
+[node name="Block2" parent="Block4" instance=ExtResource( "2_msp1o" )]
+position = Vector2(-506, 188)
+
+[node name="Block3" parent="Block4" instance=ExtResource( "2_msp1o" )]
+position = Vector2(-441, 189)
+
+[node name="Block" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(130, 1)
+
+[node name="Block2" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(195, 1)
+
+[node name="Block3" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(260, 2)
+
+[node name="Block4" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(325, 2)
+
+[node name="Block5" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(410, 1)
+
+[node name="Block6" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(475, 1)
+
+[node name="Block7" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(540, 2)
+
+[node name="Block" parent="Block4/Block3/Block7" instance=ExtResource( "2_msp1o" )]
+position = Vector2(130, 1)
+
+[node name="Block2" parent="Block4/Block3/Block7" instance=ExtResource( "2_msp1o" )]
+position = Vector2(195, 1)
+
+[node name="Block" parent="Block4/Block3/Block7/Block2" instance=ExtResource( "2_msp1o" )]
+position = Vector2(93, -48)
+
+[node name="Block8" parent="Block4/Block3" instance=ExtResource( "2_msp1o" )]
+position = Vector2(605, 2)
+
+[node name="Block4" parent="Block4" instance=ExtResource( "2_msp1o" )]
+position = Vector2(-376, 189)
+
+[node name="Block5" parent="." instance=ExtResource( "2_msp1o" )]
+position = Vector2(-537, 95)
